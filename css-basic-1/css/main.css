@@ -1,0 +1,48 @@
+#div-1 {
+    border: 5px solid purple;
+}
+
+#div-1:hover {
+    background-color: skyblue;
+}
+
+#div-2 {
+    border: 10px dashed forestgreen;
+    padding: 24px;
+    /* padding efects space INSIDE the border */
+}
+
+#div-3{
+    border: 24px dotted crimson;
+    padding: 36px; 
+    margin: 60px;
+    /* margin affects space OUTSIDE the border */
+}
+
+#div-4 {
+    border: 2px solid blue;
+    padding: 8px;
+    margin: 24px;
+    /* margin can overlap, but padding cannot */
+}
+
+#div-5 {
+    /* you can also use hexadecimal colors, also know as hex codes */
+    background-color: #222222;
+    color: white;
+}
+
+#div-6 {
+    border: 5px solid orange;
+    /* you can target top, right, bottom, and left sides */
+    padding-left: 48px;
+    /* providing two values will set the top/bottom first, and the left/right second */
+    margin: 50px 12px;
+}
+
+#div-7 {
+    border: 2px solid green;
+    padding: 20px 50px 40px 30px;
+    margin: 20px 50px 40px 30px;
+    /* you may also provide 4 values to margin and padding, the values are in this order: top, right, bottom, left */
+}
