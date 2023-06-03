@@ -1,13 +1,13 @@
 #main {
-    background-color: lavender;
+    background-color: #558081;
     padding: 50px;
     margin: 20px;
 }
 
 #content {
-    border: 5px solid navy;
-    background-color: slateblue;
-    color: white;
+    border: 5px solid #7B1009;
+    background-color: #D68056;
+    color: #3AD2D3;
     margin: 25px 0;
     padding: 25px 45px 25px 15px;
 }
