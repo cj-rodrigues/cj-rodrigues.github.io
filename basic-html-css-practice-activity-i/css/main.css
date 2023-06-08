@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    background: silver;
+}
+
+h1, h2 {
+    font-family: 'Bagel Fat One', cursive;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 25px;
+    color: teal;
+    text-shadow: 2px 2px 2px white;
+}
+
+h2 {
+    font-size: 40px;
+    color: teal;
+    text-shadow: 1px 1px 1px white;
+}
+
+header, footer {
+    background-color: lightblue;
+}
+
+header {
+    border-bottom: 5px double teal;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 25px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+#frog {
+    width: 500px;
+    margin: 10px auto;
+    border: none;
+    border-bottom: 5px double teal;
+}
+
+section.card {
+    width: 500px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: burlywood;
+    border: 10px teal;
+    border-style: double groove;
+    border-radius: 25px;
+    box-shadow: 3px 3px 1px white;
+}
+
+section.card img {
+    border-radius: 50px;
+}
+
+section.card hr {
+    margin: 20px auto;
+    border: none;
+    border-bottom: 5px double teal;
+}
+
+section#cat p {
+    display: inline-block;
+    width: 200px;
+    margin-right: 25px;
+}
+section#cat p:last-of-type {
+    margin-right: 0;
+}
+
+section#cat img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+section.img-sect img {
+    width: 200px;
+    float: right;
+    margin: 0 0 20px 25px;
+}
+
+
+footer {
+    border-top: 5px double teal;
+    text-align: center;
+    padding: 25px 0;
+}

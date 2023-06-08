@@ -1,0 +1,143 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Quicksand:wght@300;700&display=swap');
+
+/* Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    /*
+        Box sizing tells the browsers how to calculate the total width and height.
+        content-box which adds the width, padding, and border together. If you apply a width, the padding and border will make it larger than the number you apply.
+        border-box adds the width, padding, and border together and shrinks the number applied to the width to absorb any extra numbers. Makes it easier to size elements 
+     */
+    box-sizing: border-box;
+}
+
+#boxsize div {
+    width: 25%;
+    /* inline-block allows block elements to act as inline elements while allowing for a width and height to be applied */
+    display: inline-block;
+    border: 2px solid black;
+}
+
+/* Fonts */
+body {
+    /* 
+        font family types:
+        serif, sans-serif, monospace, cursive, fantasy 
+    */
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 300;
+    /*
+        font sizing units: px, pt, em, rem, %
+    */
+    font-size: 18px;
+    letter-spacing: .05em;
+    line-height: 24px;
+}
+
+span {
+    font-family: 'Bagel Fat One', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: .1em;
+    color: brown;
+    display: block;
+    text-align: center;
+    margin: 25px 0;
+    border: 2px solid coral;
+    padding: 30px 0;
+    /* 
+        offset-x, offset-y, blur-radius, spread-radius, color 
+    */
+    box-shadow: 4px 6px 8px 2px lightcoral;
+}
+
+/* Position */
+#positioning {
+    border: 1px solid lightcoral;
+    height: 200px;
+    position: relative;
+    /* Overflow */
+    overflow-y: scroll;
+}
+#positioning #div_c {
+    background-color: violet
+    ;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#positioning #div_d {
+    background-color: yellow;
+    position: fixed;
+    right: 0;
+    /* top: 300px; */
+    /* Z-Index */
+    z-index: 1;
+}
+#positioning #div_e {
+    background-color: beige;
+    position: sticky;
+    top: 0;
+}
+#positioning p {
+    height: 1000px;
+    background-color: whitesmoke;
+}
+
+/* Border-Radius */
+#multi .card {
+    border: 2px solid black;
+    padding: 25px;
+    margin: 25px auto;
+}
+#multi .round {
+    border-radius: 50px 20px 30px 80px;
+    border-color: blue;
+}
+#multi .funky {
+    border-radius: 50px 25px;
+    border-width: 15px;
+    /* Border-Style */
+    border-style: dotted double dashed groove;
+}
+
+/* Text-Decoration */
+#text #p1 {
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-decoration-style: wavy;
+    /* Text Shadow */
+    text-shadow: 2px 4px 5px lightblue;
+}
+#text #p2 {
+    text-decoration:line-through;
+    text-decoration-color: coral;
+    text-decoration-style: dashed;
+}
+#text #p3 {
+    text-decoration: overline;
+    text-decoration-color: brown;
+    text-decoration-style: dotted;
+    margin-top: 10px;
+}
+
+/* Gradients */
+.linear, .radial {
+    padding: 150px;
+    text-align: center;
+    border: 1px solid lightcoral;
+    margin: 20px;
+}
+.linear {
+    /* 
+    type of gradient: linear or radial, direction, colors can be rgba, rgb, hex, html colors
+    background: linear-gradient(to left top, orange, yellow, pink, magenta); 
+    */
+    background: linear-gradient(45deg, rgba(200, .2, 255, 0), red);
+}
+
+.radial{
+    background: radial-gradient(circle at center, coral, lightcoral, pink, whitesmoke);
+}
