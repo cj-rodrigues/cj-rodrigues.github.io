@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400;0,700;1,400&family=Gideon+Roman&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h3 {
+    font-family: 'Gideon Roman', cursive;
+}
+
+h6, h4, p, blockquote, li {
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+}
+
+h1, h3, h6 {
+    margin: 0;
+}
+
+nav{
+    float:left;
+    padding-right: 50px;
+    position: sticky;
+    top: 0;
+}
+
+header, article{
+    padding-left: 250px;
+    padding-right: 150px;
+}
+
+#ol2 {
+    display: flex;
+}
+
+.div1 {
+    padding-right: 10px;
+}
+
+.div2 {
+    padding-left: 10px;
+}
+
+li {
+    list-style-position: inside;
+}
+
+.clear{
+    clear: both;
+}
+
+section.section1 img {
+    float: right;
+    padding-left: 20px;
+}
+
+section.section2 img {
+    float: right;
+    padding-left: 20px;
+}
+
+.image{
+    padding-top: 40px;
+}
+
+section.section3 img {
+    float: right;
+    padding-left: 20px;
+}
+
+section.section4 img {
+    float: right;
+    padding-left: 20px;
+}
+
+
+
