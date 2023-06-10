@@ -1,0 +1,84 @@
+h3 {
+    text-align: center;
+}
+
+.box {
+    border: 3px solid yellow;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: grey;
+    margin: 12px;
+}
+
+.box:last-of-type, .box:nth-of-type(3) {
+    background-color: blue;
+}
+
+.flexbox {
+    display: flex;
+    border: 3px solid orange;
+    background-color: brown;
+    margin: 24px;
+}
+
+.flexbox:nth-of-type(8), .flexbox:nth-of-type(9), .flexbox:nth-of-type(10) {
+    height: 200px;
+}
+
+.column {
+    /*
+    row: default direction, the direction of the elements are laid out in a line
+    row-reverse: similar to the above but flipped
+    column: the direction of the elements are stacked column-reverse: similar to the above but flipped.
+    */
+    flex-direction: column;
+    flex-direction: column-reverse;
+}
+
+.right {
+    justify-content :flex-end;
+}
+
+.left {
+    /* default justify-content */
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.end {
+    align-items: end;
+}
+
+.start{ 
+    /* this is the default value */
+    align-items: start;
+}
+
+.center {
+    align-items: center;
+}
+
+.stretch {
+    align-items: stretch;
+    
+}
+
+.baseline {
+    align-items: baseline;
+}
