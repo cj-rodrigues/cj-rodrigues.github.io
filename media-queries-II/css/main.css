@@ -1,0 +1,61 @@
+header {
+    background-color: blue;
+    padding: 12px 48px;
+}
+
+#smallScreen, #mediumScreen, #largeScreen {
+    padding: 48px;
+}
+
+footer {
+    background-color: lightcoral;
+    padding: 12px 48px;
+}
+
+/* The following style will apply for screen widths greater than 800px */
+@media screen and (min-width: 800px) {
+    header {
+        font-size: 36px;
+    }
+    #largeScreen {
+        background-color: grey;
+        color: antiquewhite;
+    }
+    #mediumScreen, #smallScreen {
+        background-color: red;
+        color: red;
+    }
+}
+
+/* The following style will apply for screen widths greater than 480px and less than 799px (or in other words, between 480px and 799px) */
+@media screen and (min-width: 480px) and (max-width: 799px) {
+    header {
+        font-size: 24px;
+    }
+    #mediumScreen {
+        background-color: lightblue;
+        color: antiquewhite;
+    }
+    #largeScreen, #smallScreen {
+        background-color: red;
+        color: red;
+    }
+}
+
+/* The following style will apply for screen widths less than 479px */
+@media screen and (max-width: 479px) {
+    header {
+        font-size: 16px;
+    }
+    #smallScreen {
+        background-color: blueviolet;
+        color: antiquewhite;
+    }
+    #largeScreen, #mediumScreen {
+        background-color: red;
+        color: red;
+    }
+    footer {
+        display: none;
+    }
+}
