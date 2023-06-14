@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Maven+Pro:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, #logo p {
+    font-family: 'Bebas Neue', sans-serif;
+}
+p, li, a, blockquote {
+    font-family: 'Maven Pro', sans-serif;
+    color:white;
+}
+
+main p {
+    color: black;
+}
+svg {
+    width: 1rem;
+}
+
+p {
+    color: w;
+}
+
+header {
+    background-color: black;
+}
+header nav {
+    display: flex;
+    padding: .75rem 0;
+    width: 85vw;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+header nav #logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+header nav #logo svg {
+    width: 1.825rem;
+    fill: white;
+    margin-right: 0.5rem;
+    order: 1;
+    transition: all .5s;
+}
+header nav #logo p {
+    order: 2;
+}
+header nav #logo:hover {
+    color: yellow;
+    text-decoration: underline;
+}
+header nav #logo:hover svg {
+    fill: yellow;
+}
+
+header #mainnav {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+header #mainnav li {
+    margin-right: 1.25rem;
+}
+header #mainnav li:last-of-type {
+    margin-right: 0;
+}
+header #mainnav li a {
+    color: white;
+    text-decoration: none;
+    transition: all .5s;
+}
+header #mainnav li a:hover {
+    color: yellow;
+    text-decoration: none;
+}
+
+header #mainnav .drop {
+    position: relative;
+}
+.drop ul {
+    position: absolute;
+    width: 250px;
+    z-index: auto;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    background-color: black;
+    padding: .5rem 1.25rem;
+    visibility: hidden;
+    opacity: 0;
+    transition:
+    top .5s,
+    visibility .5s,
+    opacity .5s;
+}
+.drop:hover ul {
+    top: calc(100% + .75rem);
+    opacity: 1;
+    visibility: visible;
+}
+.drop ul li {
+    margin-bottom: .5rem;
+}
+.drop ul li:last-of-type {
+    margin-bottom: 0;
+}
+
+img {
+    float: right;
+}
+
+main {
+    padding: 50px 50px 50px;
+}
+
+main p {
+    padding: 10px 0 0;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+}
