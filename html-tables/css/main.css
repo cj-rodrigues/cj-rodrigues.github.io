@@ -1,0 +1,70 @@
+#fun, #fun caption, #fun th, #fun td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 12px;
+    text-align: center;
+}
+
+#fun {
+    margin-bottom: 48px;
+}
+
+/* Demonstrates how colspan can apply to the columns */
+#colspan {
+    background-color: seashell;
+}
+
+#funrow {
+    background-color: #532485;
+    color: white;
+}
+
+#funcell, #fun tbody tr:nth-of-type(2) {
+    background-color: #505e63;
+    color: white;
+}
+
+#fun tbody tr:nth-of-type(3) {
+    background-color: #03fcc6;
+}
+
+#fun tbody tr:nth-of-type(4) {
+    background-color: #113062;
+    color: white;
+}
+
+#fun tbody tr:nth-of-type(5) {
+    background-color: #fff39c;
+}
+
+#fun tbody tr:nth-of-type(6) {
+    background-color: #7030d6;
+    color: white;
+}
+
+/* Basic table styles. Reference for your exercises */
+#basic {
+    border-collapse: collapse;
+}
+
+#basic th { 
+    padding: 0 25px 12px 0;
+}
+
+#basic td {
+    padding: 4px 0;
+}
+
+#basic tr:nth-child(even){
+    background-color: green;
+    color: white;
+}
+
+#basic tr:nth-child(odd){
+    background-color: grey;
+    color: white;
+}
+
+#basic tr:hover {
+    background-color: burlywood;
+}
