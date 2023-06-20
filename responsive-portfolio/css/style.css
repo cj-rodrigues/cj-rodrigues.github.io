@@ -12,15 +12,11 @@ body {
     margin: 0;
 }
 
-h1,
-h2,
-h3,
-a {
+h1, h2, h3, a {
     font-family: 'Dosis', sans-serif;
 }
 
-h4,
-p {
+h4, p {
     font-family: 'Quicksand', sans-serif;
 }
 
@@ -38,14 +34,11 @@ a {
     text-decoration: none;
 }
 
-nav, 
-nav a, 
-footer a {
+nav, nav a, footer a {
     color: #113062;
 }
 
-nav a:hover,
-footer a:hover {
+nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
@@ -65,9 +58,7 @@ footer a:hover {
     ". two_cards_area ."
     "footer_area footer_area footer_area";
 }
-section {
-    border: 4px solid #113062;
-}
+
 nav {
     grid-area: nav_area;
 }
@@ -108,14 +99,12 @@ footer {
     justify-content: center;
 }
 
-#nav_links,
-.social_media {
+#nav_links, .social_media {
     display: flex;
     list-style-type: none;
 }
 
-#nav_links li,
-.social_media li {
+#nav_links li, .social_media li {
     padding: 0 4px;
 }
 
@@ -128,19 +117,15 @@ nav .social_media {
     font-size: 20px;
 }
 
-nav,
-nav a,
-footer a {
+nav, nav a, footer a {
     color: #113062;
 }
 
-nav a:hover,
-footer a:hover {
+nav a:hover, footer a:hover {
     text-decoration: underline;
 }
 
-nav ul,
-nav h2 {
+nav ul, nav h2 {
     flex: 1;
     margin: 0;
     padding: 0;
@@ -232,7 +217,75 @@ Button styles
 /****************************************************************************
   Gallery styles
 ****************************************************************************/
+#gallery_container {
+    text-align: center;
+}
 
+#gallery_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery_1 img {
+    width: 100%;
+}
+
+#gallery_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#gallery_2 img {
+    height: calc(800px/3);
+    width: calc(800px/3);
+    object-fit: cover;
+}
+
+#gallery_3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery_3 img {
+    height: 200px;
+    margin: 12px;
+    flex: 1 0 auto;
+    object-fit: cover;
+}
+
+#gallery_4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 1100px;
+}
+
+#gallery_4 img {
+    width: 30%;
+    margin: 12px;
+}
+
+#gallery_5 {
+    columns: 3 auto;
+    column-gap: 24px;
+}
+
+#gallery_5 img {
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+#gallery_6 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#gallery_6 img {
+    height: 200px;
+    margin: 12px;
+    flex: 1 0 auto;
+    object-fit: contain;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
@@ -259,5 +312,26 @@ Button styles
     .card {
         align-items: center;
         margin: 36px 24px 0px;
+    }
+
+    #gallery_1, #gallery_2 {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery_2 img {
+        width: 100%;
+        height: auto;
+    }
+
+    #gallery_4 {
+        max-height: 1900px;
+    }
+
+    #gallery_4 img {
+        width: 45%;
+    }
+
+    #gallery_5 {
+        columns: 2 auto;
     }
 }
