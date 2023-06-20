@@ -59,7 +59,7 @@ nav a:hover, footer a:hover {
     "footer_area footer_area footer_area";
 }
 
- {
+nav {
     grid-area: nav_area;
 }
 #hero {
