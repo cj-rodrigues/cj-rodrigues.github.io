@@ -280,7 +280,7 @@ Button styles
     flex-wrap: wrap;
 }
 
-#gallery_6 img {
+#gallery_6 {
     height: 200px;
     margin: 12px;
     flex: 1 0 auto;
