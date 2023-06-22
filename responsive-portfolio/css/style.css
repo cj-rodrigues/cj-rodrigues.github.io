@@ -278,6 +278,7 @@ Button styles
 #gallery_6 {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 75px;
 }
 
 #gallery_6 img {
