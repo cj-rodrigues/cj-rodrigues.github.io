@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap');
+/*font-family: 'Lobster', cursive;
+font-family: 'Montserrat', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: medium;
+    color: black;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: black;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: black;
+    font-size: small;
+}
+
+footer p {
+    color: white;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    padding: 25px 0;
+    justify-content: space-between;
+}
+nav #mainnav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+header #mainnav li a {
+    color: white;
+    margin-right: 1.25rem;
+    padding: .75rem 0;
+    text-decoration: none;
+}
+
+header #mainnav li a:hover {
+    color: #E1A177;
+}
+
+button {
+    background-color: black;
+    padding: 15px;
+    border-radius: 15px;
+    border-style: none;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button a:hover {
+    color: #E1A177;
+}
+
+#section1 {
+    display: flex;
+    background-color: #E1A177;
+    padding: 50px;
+    flex-direction: row-reverse;
+}
+
+#section1 img {
+    object-fit: contain;
+}
+
+#section2 {
+    display: flex;
+    padding: 50px;
+    flex-direction: row-reverse;
+}
+
+#section2 img {
+    object-fit: contain;
+}
+
+#first h2 {
+    padding-left: 50px;
+}
+
+.card {
+    border: 1px solid black;
+    color: black;
+    border-radius: 15px;
+    margin: 48px 24px 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+#three_cards {
+    display: flex;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: small;
+    flex: 1;
+    margin-top: 0px;
+}
+
+.class1 {
+    width: 100%;
+    height: 300px;
+}
+
+.class1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#carousel-container {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+#carousel-container h2 {
+    text-align: center;
+    padding-top: 50px;
+}
+
+#hero-1 {
+    background-image: url(../images/tale.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#hero-1 h2 {
+    text-shadow: 2px 2px 2px black;
+    color: #E1A177;
+    margin-bottom: 200px;
+    font-size: 50px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    height: 200px;
+}
+
+footer p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: small;
+}
+
+footer #mainnav {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+footer #mainnav li a {
+    color: white;
+    margin-right: 1.25rem;
+    padding: .75rem 0;
+    text-decoration: none;
+}
+
+footer #mainnav li a:hover {
+    color: #E1A177;
+}
+
+@media screen and (max-width: 768px) {
+    #three_cards, #section1, #section2 {
+        flex-direction: column;
+    }
+
+    .card {
+        align-items: center;
+        margin: 36px 24px 0px;
+    }
+}
+
+
+
