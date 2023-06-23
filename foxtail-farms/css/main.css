@@ -212,7 +212,7 @@ footer #mainnav li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    #three_cards, #section1, #section2 {
+    #three_cards, #section1, #section2, #mainnav {
         flex-direction: column;
     }
 
