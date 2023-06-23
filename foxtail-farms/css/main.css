@@ -210,6 +210,10 @@ footer #mainnav li a {
 footer #mainnav li a:hover {
     color: #E1A177;
 }
+ 
+.carousel button {
+    background: #E1A177;
+}
 
 @media screen and (max-width: 768px) {
     #three_cards, #section1, #section2, #mainnav {
