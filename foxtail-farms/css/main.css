@@ -50,6 +50,10 @@ nav #mainnav {
     justify-content: center;
 }
 
+header svg {
+    margin-left: 50px;
+}
+
 header #mainnav li a {
     color: white;
     margin-right: 1.25rem;
@@ -96,6 +100,10 @@ button a:hover {
 
 #section2 img {
     object-fit: contain;
+}
+
+#section1 p {
+    padding-right: 50px;
 }
 
 #section2 p {
@@ -145,6 +153,8 @@ button a:hover {
 #carousel-container h2 {
     text-align: center;
     padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #E1A177;
 }
 
 #hero-1 {
