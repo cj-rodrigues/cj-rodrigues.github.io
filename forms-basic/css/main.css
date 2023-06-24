@@ -1,0 +1,137 @@
+.text-input label {
+    display: block;
+    font-family: sans-serif;
+}
+
+.text-input input {
+    margin: 4px 0px 16px;
+    padding: 12px;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    width: 300px;
+}
+
+#first-name-id {
+    border: 0;
+    border-bottom: 4px solid blue;
+}
+
+#first-name-id:focus-visible {
+    outline: 0;
+    background-color: rgb(197, 238, 254);
+}
+
+/*
+#first-name-id:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+*/
+
+#first-name-id:not(:focus):invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#first-name-id:valid {
+    background-color: lightgreen;
+    border-bottom: 4px solid green;
+}
+
+input [type=email]:invalid {
+    background-color: lightcoral;
+    border-bottom: 4px solid red;
+}
+
+#last-name-id {
+    border: 5px solid lightgreen;
+    border-radius: 24px;
+    color: darkgreen;
+}
+
+#last-name-id:focus-visible {
+    outline: none;
+    background-color: darkgreen;
+    color: white;
+}
+
+#code-feelings-id {
+    width: 400px;
+    height: 100px;
+    margin-top: 4px;
+    padding: 12px;
+    font-family: Verdana, sans-serif;
+    font-size: 18px;
+}
+
+/* this code will not work! because you can't style checkboxes and radio buttons */
+#bike_checkbox, #rasp_radio {
+    border: 5px solid red;
+    padding: 24px;
+    background-color: pink;
+    color: aqua;
+}
+
+input[type=date] {
+    padding: 12px;
+    border: 3px dashed peru;
+    font-family: cursive;
+    font-size: 24px;
+    color: lightblue;
+}
+
+select {
+    padding: 12px;
+    border: 3px dashed palevioletred;
+    font-family: cursive;
+    font-size: 24px;
+    color: lightblue;
+}
+
+#buttons {
+    margin-bottom: 400px;
+}
+
+input[type=button] {
+    border: 3px solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: darkgrey;
+    color: white;
+}
+
+input[type=reset] {
+    border: 1ox solid black;
+    border-radius: 6px;
+    padding: 12px;
+    margin-right: 12px;
+    background: linear-gradient(to bottom, purple, orange);
+    color: white;
+    cursor: pointer;
+}
+
+/* the :active pseudo-clas is used to style the click state */
+input [type=reset]:active {
+    background: linear-gradient(to top, purple, orange);
+}
+
+input[type=submit] {
+    background: linear-gradient(to bottom, skyblue, pink);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 48px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+input[type=submit]:active {
+    background: linear-gradient(to top, skyblue, pink);
+}

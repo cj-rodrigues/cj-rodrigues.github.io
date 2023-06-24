@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Hotel Booking</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="hero_1">
+            <h1>Hotel Booking</h1>
+        </div>
+        
+        <form>
+            <fieldset>
+                <legend>Start your reservation</legend>
+                <h4>Experience something new every moment!</h4>  
+                
+                
+                <div class="text-input">
+                    <label for="first-name-id">First Name *:</label>
+                    <input required id="first-name-id" name="first-name" type="text" minlenght="2" maxlength="15">
+                </div>
+
+                <div class="text-input">
+                    <label for="last-name-id">Last Name *:</label>
+                    <input required type="text" id="last-name-id" name="last-name">
+                </div>
+
+                <div class="text-input">
+                    <label for="email-id">Email *:</label>
+                    <input required type="email" id="email-id" name="email">
+                </div>
+
+                <div>
+                    <label for="roomtype-group-id">Room Type:*</label>
+                    <select required id="roomtype-group-id" name="roomtype-group">
+                        <option value="" disabled selected>Please Select</option>
+                        <option value="standard">Standard Room (1 to 2 People)</option>
+                        <option value="family">Family Room (1 to 4 People)</option>
+                        <option value="private">Private Room (1 to 2 People)</option>
+                        <option value="mix">Mix Dorm Room (6 People)</option>
+                        <option value="female">Female Dorm (6 People)</option>
+                        <option value="male">Male Dorm (6 People)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="date-id">Arrival Date:*</label>
+                    <input required type="date" id="date-id" name="birthday">
+                </div>
+
+                <div>
+                    <label for="date-id">Departure Date:*</label>
+                    <input required type="date" id="date-id" name="birthday">
+                </div>
+
+                <label id="label" for="pickup-id">Free Pickup?:*</label>
+                <div>
+                    <input type="radio" id="yes-radio" name="pickup" value="yes" required>
+                    <label for="yes-radio">Yes Please! - Pick me up on arrival</label>
+                </div>
+                <div>
+                    <input type="radio" id="no-radio" name="pickup" value="no" required>
+                    <label for="no-radio">No Thanks - I'll make my own way there</label>
+                </div>
+
+                <div class="text-input">
+                    <label for="flight-number-id">Flight Number *:</label>
+                    <input required id="flight-number-id" name="flight-number" type="text" minlenght="2" maxlength="15">
+                </div>
+
+                <div class="text-input">
+                    <label for="special-requests-id">Special Requests</label>
+                    <textarea id="special-requests-id" name="special-requests"></textarea>
+                </div>
+
+                <div id="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>
