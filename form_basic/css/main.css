@@ -6,21 +6,9 @@
     padding: 0;
 }
 
-.text-input label {
-    display: block;
-    font-family: sans-serif;
-}
-
-.text-input input {
-    margin: 4px 0px 16px;
-    padding: 12px;
-    font-size: 18px;
-    width: 300px;
-}
-
 #hero_1 {
     background-image: url(../images/image1.jpg);
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     background-size: cover;
     background-position: center center;
     height: 30vh;
@@ -36,6 +24,36 @@
     text-shadow: 2px 2px 2px white;
 }
 
+form {
+    background-image: url(../images/image2.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text-input label {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 300px
+}
+
+.text-input input {
+    margin: 4px 100px 16px;
+    padding: 12px;
+    font-size: 18px;
+    width: 900px;
+    display: block;
+    margin-left: 350px;
+}
+
+.text-input textarea {
+    display: block;
+    margin-left: 350px;
+}
+
 legend, h4 {
     text-align: center;
     margin: 20px;
@@ -43,28 +61,34 @@ legend, h4 {
 }
 
 input[type=submit] {
-    background: lightblue;
+    background: black;
     border: none;
     border-radius: 8px;
     padding: 12px 48px;
     cursor: pointer;
+    margin-top: 50px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 750px;
 }
 
 input[type=date] {
     padding: 12px;
-    border: 3px solid lightblue;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     margin-bottom: 20px;
+    display: block;
+    margin-left: 350px;
 }
 
 select {
     padding: 12px;
-    border: 3px solid lightblue;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    margin-top: 4px;
+    margin-top: 4x;
     margin-bottom: 20px;
+    display: block;
+    margin-left: 350px;
 }
 
 #special-requests-id {
@@ -73,8 +97,19 @@ select {
     margin-top: 4px;
     padding: 12px;
     font-size: 14px;
+    margin-left: 350px;
+    display: block;
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type=radio] {
     margin-bottom: 20px;
+    margin-left: 350px;
+    font-family: 'Roboto', sans-serif;
+}
+
+label {
+    margin-left: 300px;
+    margin-top: 4px;
+    font-family: 'Roboto', sans-serif;
 }
