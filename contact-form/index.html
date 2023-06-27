@@ -17,8 +17,8 @@
             <form action="https://getform.io/f/f57d3f43-d36a-4925-8e96-2231ff18b324" method="POST">
                 <div>
                     <label for="services_id">What can we help you with?</label>
-                    <select id="services_id" name="service_selection">
-                        <option id="default_option" value="none" disabled selected>
+                    <select id="services_id" name="service_selection" required>
+                        <option id="default_option" value="" disabled selected>
                             Select what we can help you with
                         </option>
                         <option value="gardening">Gardening</option>
@@ -33,7 +33,9 @@
                         id="name_id"
                         name="name"
                         required
-                        placeholder="E.g. John Smith">
+                        placeholder="E.g. John Smith"
+                        minlength="2"
+                        maxlength="20">
                 </div>
                 <div>
                     <label for="email_id">Email</label>
@@ -42,15 +44,19 @@
                         id="email_id"
                         name="email"
                         required
-                        placeholder="E.g. jane.doe@gmail.com">
+                        placeholder="E.g. jane.doe@gmail.com"
+                        minlength="20"
+                        maxlength="100">
                 </div>
                 <div>
                     <label for="message_id">Message</label>
                     <textarea
+                    required
                         id="message_id"
                         name="message"
-                        placeholder="I would like you to...">
-                    </textarea>
+                        placeholder="I would like you to..."
+                        minlength="20"
+                        maxlength="2500"></textarea>
                 </div>
                 <div>
                     <input type="submit" value="Send">
