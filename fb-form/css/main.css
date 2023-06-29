@@ -1,0 +1,122 @@
+img {
+    width: 300px;
+}
+
+body {
+    background-color: #EDF0F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0px 9px 24px -13px rgba(0,0,0,0.75);
+    
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+fieldset {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    border: none;
+}
+
+#d1 input, #d2 input, #d3 input {
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+#d1 input {
+    padding: 0 12px;;
+}
+#d2 input, #d3 input {
+    width: 330px;
+}
+
+#d4, #d5{
+    color: #525d65;
+    font-size: smaller;
+}
+
+#d4 {
+    margin-bottom: 10px;
+}
+
+select {
+    height: 30px;
+    width: 110px;
+    margin-right: 2px;
+}
+
+#d5 {
+    margin-right: 280px;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, #p1, #p4 {
+    text-align: center;
+}
+
+#p2, #p3 {
+    font-size: x-small;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+input[type=submit] {
+    color: white;
+    background-color: #00991C;
+    border: none;
+    width: 150px;
+    font-size: medium;
+    font-weight: bold;
+    height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#d6 {
+    display: flex;
+}
+
+#d7, #d8, #d9 {
+    border: 1px solid #A7A7A7;
+    border-radius: 2px;
+    height: 25px;
+    width: 100px;
+    margin-right: 5px;
+    font-size: small;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+#p4 {
+    font-size: small;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+select:invalid {
+    border: 1px solid red;
+}
+
+
+

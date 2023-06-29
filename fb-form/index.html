@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Document</title>
+        <link href="css/main.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/f97bd15d22.js" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/f97bd15d22.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <img src="images/fb_logo.svg" alt="facebook logo">
+        <form>
+            <fieldset>
+                <h1>Create a new account</h1>
+                <p id="p1">It's quick and easy.</p>
+                <hr>
+
+                <div id="main">
+                    <div id="d1" class="text-input">
+                        <input required id="first-name-id" name="first-name" type="text" minlenght="2" maxlength="15" placeholder="First name">
+                    
+
+                        <input required type="text" id="last-name-id" name="last-name" placeholder="Last name" minlength="2" maxlength="15">
+                    </div>
+
+                    <div id="d2" class="text-input">
+                        <input required type="email" id="email-id" name="email" placeholder=" Mobile number or email" minlength="10" maxlength="60">
+                    </div>
+
+                    <div id="d3" class="text-input">
+                        <input
+                        required type="password" id="password-id" name="password" placeholder="New password" minlength="7" maxlength="15">
+                    </div>
+
+                    <div id="d4">
+                        <label for="birthday-group-id">Birthday<i class="fa-solid fa-circle-question" style="color: #525d65;"></i></label>
+                        <br>
+                        <select id="month-group-id" name="month-group" required>
+                            <option value="" disabled selected>Month</option>
+                            <option value="january">Jan</option>
+                            <option value="february">Feb</option>
+                            <option value="march">Mar</option>
+                        </select>
+                        <select id="day-group-id" name="day-group" required>
+                            <option value="" disabled selected>Day</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                        </select>
+                        <select id="year-group-id" name="year-group-id" required>
+                            <option value="" disabled selected>Year</option>
+                            <option value="1990">1990</option>
+                            <option value="1991">1991</option>
+                            <option value="1992">1992</option>
+                        </select>
+                    </div>
+
+                        <div id="d5" label for="gender-group-id">Gender<i class="fa-solid fa-circle-question" style="color: #525d65;"></i></label>
+                        </div>
+                    
+                        <div id="d6">
+                            <div id="d7">
+                                <label for="gender-radio">Female</label>
+                                <input
+                                type="radio"
+                                id="female-radio"
+                                name="gender"
+                                value="female"
+                                required>
+                            </div>
+
+                            <div id="d8">
+                                <label for="gender-radio">Male</label>
+                                <input
+                                type="radio"
+                                id="male-radio"
+                                name="gender"
+                                value="male"
+                                required>
+                            </div>
+
+                            <div id="d9">
+                                <label for="gender-radio">Custom</label>
+                                <input
+                                type="radio"
+                                id="custom-radio"
+                                name="gender"
+                                value="custom"
+                                required>
+                            </div>
+                        </div>
+
+                        <p id="p2">People who use our service may have uploaded your contact information to
+                        <br>
+                        Facebook. <a href="#">Learn more.</a></p>
+                        <p id="p3">By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Privacy Policy</a> and <a href="#">Cookies</a>
+                        <br> 
+                        Policy. You may receive SMS Notifications from us and can opt out any time.</p>
+
+                        <div>
+                            <input
+                            type="submit"
+                            value="Sign Up">
+                        </div>
+
+                        <p id="p4"><a href="#">Already have an account?</a></p>
+                    </div>
+            </fieldset>
+        </form>
+        
+
+    </body>
+</html>
