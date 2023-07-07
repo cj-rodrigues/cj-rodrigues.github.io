@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #040405;
+}
+
+#hero {
+    background-image: url(../images/hulu-bg.jpeg);
+    background-size: cover;
+}
+
+nav {
+    padding: 24px 36px;
+    background: linear-gradient(to bottom, #000000DD, #00000000);
+}
+
+nav img {
+    width: 60px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+nav a:hover {
+    background-color: rgb(93, 92, 92);
+}
+
+#hero_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5 {
+    color: #00ed82;
+}
+
+#hero_content p {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#hero_content img {
+    margin: 25px 0;
+}
+
+.btn-link {
+    display: inline-block;
+    background-color: #00ed82;
+    color: black;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 14px;
+    padding: 16px;
+    border-radius: 6px;
+    width: 670px;
+    text-align: center;
+    transition: opacity 0.5s;
+}
+.btn-link:hover {
+    opacity: 0.5;
+}
+
+.small-link, .medium_link {
+    display: inline-block;
+    color: white;
+}
+
+.small-link {
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.medium_link {
+    margin-top: 28px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 12px 36px;
+    margin-top: 60px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer #footer_image_container {
+    width: 250px;
+}
+
+footer img {
+    width: 100%;
+}
+
+.clear_button_link {
+    display: inline-block;
+    color: black;
+    background-color: #00ed82;
+    font-weight: bolder;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 12px 24px;
+    transition: opacity 0.5s;
+}
+.clear_button_link:hover {
+    opacity: 0.5;
+}
+
+.tiny_link {
+    display: block;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    margin-top: 4px;
+}
+
+#footer_center {
+    margin: 0 24px;
+    flex: 1;
+}
+
+#footer_center p {
+    color: white;
+    font-size: 22px;
+}
+
+#cards_section {
+    text-align: center;
+    margin-top: 90px;
+}
+
+#cards_section h2, #cards_section p, #cards_section h6, #cards_section h4 {
+    color: white;
+}
+
+#cards_section h2 {
+    font-size: 48px;
+    margin: 10px auto 30px auto;
+}
+#cards_section p {
+    width: 700px;
+    margin: 0 auto;
+}
+
+#cards_container {
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    grid-auto-rows: 450px;
+    gap: 24px;
+    width: 1252px;
+    margin: 60px auto;
+    text-align: left;
+}
+
+#cards_container div {
+    padding-left: 24px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    border: 4px solid #040405;
+    outline: 4px solid transparent;
+    transition:
+    outline 0.5s,
+    opacity 0.5s;
+}
+#cards_container div:hover {
+    outline-color: grey;
+    opacity: 0.6;
+}
+
+#cards_container h6 {
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+#cards_container h4 {
+    font-size: 22px;
+}
+
+#bobs_burgers {
+    background-image: url(../images/bobsburgers.jpeg);
+}
+#prey {
+    background-image: url(../images/prey.jpeg);
+}
+#handmaids_tale {
+    background-image: url(../images/handmaidstale.jpeg);
+}
+#dragon {
+    background-image: url(../images/houseofdragon.jpeg);
+}
+
+@media screen and (max-width: 768px) {
+    .btn-link {
+        width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 36px;
+        row-gap: 24px;
+    }
+    #cards_section {
+        padding: 0 24px;
+    }
+    #cards_section p {
+        width: 100%;
+    }
+    #cards_container {
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    #cards_container div {
+        background-repeat: no-repeat;
+    }
+    #cards_container h4 {
+        font-weight: normal;
+    }
+}
