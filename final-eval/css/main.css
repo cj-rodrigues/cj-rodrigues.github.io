@@ -204,9 +204,20 @@ footer a {
     }
     input[type=email] {
         width: 150px;
-        font-size: xx-small;
+        font-size: 7px;
     }
     .center {
         width: 200px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    #buttons #button1 {
+        width: 60px;
+        font-size: xx-small;
+    }
+    #buttons #button2 {
+        width: 40px;
+        font-size: xx-small;
     }
 }
