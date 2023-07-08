@@ -194,5 +194,14 @@ footer a {
     main img {
         margin-left: auto;
         margin-right: auto;
+        width: 300px;
+    }
+    input[type=submit] {
+        width: 120px;
+        font-size: xx-small;
+    }
+    input[type=email] {
+        width: 200px;
+        font-size: xx-small;
     }
 }
