@@ -165,6 +165,8 @@ footer img {
 #d1, #d2, #d3 {
     font-size: small;
     padding-bottom: 35px;
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
@@ -197,11 +199,14 @@ footer a {
         width: 300px;
     }
     input[type=submit] {
-        width: 120px;
-        font-size: xx-small;
+        width: 100px;
+        font-size: 7px;
     }
     input[type=email] {
-        width: 200px;
+        width: 150px;
         font-size: xx-small;
+    }
+    .center {
+        width: 200px;
     }
 }
